@@ -133,7 +133,7 @@ jobs:
         dotnet-version: 3.1.x
       
     - name: Build
-      run: dotnet build AssemblyBuild\Zenject-usage\Zenject-usage.sln
+      run: dotnet build AssemblyBuild/Zenject-usage/Zenject-usage.sln
       
     - name: Upload dll
       uses: actions/upload-artifact@v1
@@ -163,5 +163,5 @@ jobs:
     - name: Install Zenject-Usage
       run: |
         ls -l Zenject-Usage
-        cp Zeenject-Usage/Zenject-Usage.dll Source/Usage
+        cp Zenject-Usage/Zenject-Usage.dll Source/Usage
         ls -l Source/Usage
